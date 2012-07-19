@@ -1,0 +1,8 @@
+﻿#area .item {
+    margin: 10px auto;
+	width: 80%;
+	padding: 0 0 0 0;
+	text-indent:0em;
+	border-bottom: 1px dashed #CEE1EE;
+    font-family: Arial, verdana, Helvetica, sans-serif;
+}

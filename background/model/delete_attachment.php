@@ -1,0 +1,1 @@
+<?php    $url = $_POST['url'];	if (unlink($url)){	    echo "1";	} else {	    echo "0";	}?>

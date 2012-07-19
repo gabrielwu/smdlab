@@ -1,0 +1,107 @@
+﻿#wrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+#header #banner {
+    height: 98px;
+    margin: 10px 0 0px 0;
+}
+#header #banner .cn {
+    padding: 10px 180px 5px;
+}
+#header #banner .en {
+    padding: 5px 180px 5px 240px;
+}
+#header .nav{
+    height: 40px;
+}
+#header .nav ul {
+    margin:0 ;
+	padding: 0 20px;
+	height: 100%;
+}
+#header .nav ul li{
+    float: left;
+    height: 31px;
+    _height: 38px;
+	padding: 7px 13px 0 13px;
+}
+#header hr {
+    margin: 0;
+}
+
+#content {
+    position: relative;
+	min-height: 870px;
+}
+#sidebar {
+    min-height: 830px;
+	_height: 860px;
+	width: 240px;
+	padding: 0 10px 10px 10px;
+	margin: 10px 0 0 0;
+}
+#sidebar .sidebar_nav{
+    width: 240px;
+	margin: auto;   
+}
+#sidebar .sidebar_nav ul{
+    padding: 0;
+    margin: 0 0 10px;
+}
+#sidebar .sidebar_nav ul li{
+    padding: 0;
+}
+#sidebar .sidebar_nav ul li a{
+    display: block;
+    padding: 5px 18px 5px 24px;
+}
+#sidebar .sidebar_nav div{
+    padding: 0;     
+}
+#sidebar  #sidebar_nav_1 ul li{
+    padding: 5px 18px 5px 60px;
+}
+#back_to_top {
+    position: fixed;
+	margin-left: 90px;
+	bottom: 50px;
+	width: 44px;
+	height: 40px;
+	border-radius: 3px;
+}
+#back_to_top a{
+	display: block;
+	border-radius: 3px;
+}
+
+#main {
+    position: absolute;
+    left: 260px;
+	top: 0px;
+	min-height: 840px;
+	width: 740px;
+}
+#main #area {
+    margin: 10px auto 0px;
+	padding: 0px 0 0px;
+	width: 95%;
+	border-radius: 4px;
+}
+#footer .copyright {
+	margin: auto;
+	height: auto;
+}
+#footer .copyright table{
+	margin: auto;
+	height: auto;
+}
+#footer .copyright table tr td.copyright_td{
+	padding: 0 40px 0 0;
+}
+#footer .copyright #clicks{
+}
+#footer .copyright #clicks img{
+	padding: 0 0 0 0;
+}

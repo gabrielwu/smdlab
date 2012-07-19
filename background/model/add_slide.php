@@ -1,0 +1,1 @@
+<?php    $id = $_GET['id'];	$path=$_GET['pi_path'];	include("connect.php");	mysql_query("set names 'gb2312'");	$sql="insert into slide (s_no,s_path) values ('".$id."','".$path."')";	echo mysql_query($sql);?>

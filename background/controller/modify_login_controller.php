@@ -1,0 +1,1 @@
+<?php	//ÓÃ	header("Content-Type:text/html;charset=gb2312");	if($_GET['modify_login_mark']==account)		require_once("../model/modify_account_model.php");//ÐÞ¸ÄÕËºÅ	if($_GET['modify_login_mark']==password)		require_once("../model/modify_password_model.php");//ÐÞ¸ÄÃÜÂë?>

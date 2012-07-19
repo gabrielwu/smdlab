@@ -1,0 +1,44 @@
+﻿#sidebar #sidebar_nav_1 ul li {
+	text-indent: 0;
+	padding-left: 24px;
+}
+#sidebar #sidebar_nav_1 ul li span.title{
+    display: block;
+	width: 48px;
+	font-weight: bold;
+}
+#sidebar #sidebar_nav_1 ul li p{
+    margin: -16px 0 0 4px;
+	padding-left: 48px;
+}
+
+#area {
+    margin: 10px auto 0px;
+	padding: 0px 0 0;
+	width: 95%;
+	border-radius: 4px;
+	border: 1px solid #aaa;
+	background: #fff;
+	line-height: 1.8;
+}
+#area .item {
+    margin: 20px auto 20px;
+    width: 90%;
+}
+#area h3 {
+	padding: 0 0 4px 20px;
+    letter-spacing: 0px;	
+	border-bottom: 1px solid #CEE1EE;
+	text-align: left;
+	margin: 20px auto 5px;
+	font: normal 18px arial,sans-serif;
+	color: #06c;
+}
+#area .item p {
+	padding: 4px 20px;
+    letter-spacing: 0px;
+    line-height: 21px;	
+	text-align: left;
+	margin: 0px auto 5px;
+	font: normal 13px arial,sans-serif;
+}

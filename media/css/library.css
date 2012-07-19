@@ -1,0 +1,15 @@
+﻿#main #area h3 {
+    text-align: center;
+}
+#main #area .item{
+    margin: 20px auto 30px;
+	border-bottom: 1px dashed #ddd;
+	line-height: 1.3;
+}
+#main #area .item .item_content {
+    margin: 0px auto;
+	width: 94%;
+}
+#main #area .item .item_content p {
+    margin: 5px auto;
+}

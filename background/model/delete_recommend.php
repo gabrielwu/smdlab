@@ -1,0 +1,9 @@
+<?php
+	//ÓÃ
+    $id = $_GET['id'];
+	include("connect.php");
+	
+	//É¾³ý¼ÇÂ¼
+	$sql="delete from recommend where re_id=$id";
+	echo mysql_query($sql);
+?>

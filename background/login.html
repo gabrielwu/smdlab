@@ -1,0 +1,144 @@
+<html>
+<head>
+	<title>后台</title>
+</head>
+<body style="text-align:center">
+	<div style="width:250px;height:125px;margin:0 auto;">
+	<table  border="0" bgcolor="">
+	<form id="loginform">
+		<tr> 
+			<td colspan="2" align="center">登陆<a href="../index.php"><font size="2" color="#707038">[回首页]</font></a></td>
+		</tr>
+		<tr>
+			<td align="center">账&nbsp;&nbsp;号：</td>
+			<td ><input id="account" type="text"  style="width:125px;"/></td>
+		</tr>
+		<tr>
+			<td align="center">密&nbsp;&nbsp;码：</td>
+			<td ><input id="password" type="password"  style="width:125px;"/></td>
+		</tr>
+		<tr>
+			<td width="125" align="center"><input type="button" value="登陆"onclick="checkall();"  align="center" style="width:100px;"/></td>
+			<td width="125" align="center"><input type="reset" align="center" style="width:100px;"/></td>
+		</tr>
+	</form>
+	</table>
+	</div>
+	<div id="display"style="width:250px;margin:0 auto;"></div>
+	<script language="javascript">
+		//建立远程浏览对象
+		function getXmlHttpRequest()
+		{
+			var xmlHttp=null;
+			try
+			{
+				xmlHttp = new XMLHttpRequest();//火狐等较高级的浏览器
+			}
+			catch(e)
+			{
+				try
+				{
+				xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");//针对IE浏览器
+				}
+				catch(e)
+				{
+					try
+					{
+					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");//IE6
+					}
+					catch(e)
+					{
+					xmlHttp =false;
+					}
+				}
+			}
+			return xmlHttp;
+		}
+		//发送异步请求函数
+		function sendRequest(url,call_back,mydata)
+		{
+			var mydata = mydata || "";
+			//onreadystatechage:指定当前readyState属性改变时的事件处理句柄，只写。
+			xmlHttp.onreadystatechange = call_back;
+			if(mydata != "")
+			{
+				//open：创建一个新的HTTP请求，并指定此请求的方法、URL及验证信息（用户名/密码）。
+				xmlHttp.open("POST",url,true);//使用POST方法打开一个到url的连接，为发出请求做准备。
+				//setRequestHeader：单独指定请求的某个HTTP头
+				xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+				xmlHttp.setRequestHeader("Content-length",mydata.length);
+				xmlHttp.setRequestHeader("Connection","close");
+			}
+			else
+			{
+				xmlHttp.open("GET",url,true);
+			}
+			xmlHttp.send(mydata);//发送请求到HTTP服务器并接收回应。
+		}
+		//回调函数
+		function callBack()
+		{
+			//readyState:返回当前请求的状态，只读
+			//返回值为0表示对象已建立，但是尚未有初始化。
+			//1表示对象已建立，未调用send方法。
+			//2表示send方法已调用，但是当前的状态及HTTP头未知。
+			//3表示已接受部分数据，因为响应及HTTP头不全，这时通过responseBody和responseText获取部分数据会出现错误。
+			//4表示数据完全接受完毕。
+			if(xmlHttp.readyState == 4)
+			{
+				//responseText:将响应信息作为字符返回。
+				//var response = xmlHttp.responseText;
+				//document.getElementById("display").innerHTML = xmlHttp.responseText;
+				if (xmlHttp.responseText=="fail")
+					document.getElementById("display").innerHTML = "账号或密码错误，请重新登陆！！";
+				else
+					window.location.href=xmlHttp.responseText;//跳转到后台管理界面
+			}
+		}
+		var xmlHttp = getXmlHttpRequest();//调用函数得到一个对象
+		function AJAXRequest()
+		{
+			var account = document.getElementById('account').value;
+			var password = document.getElementById('password').value;
+			//以POST方式提交数据
+			sendRequest('controller/check_account.php',callBack,'account='+account+'&password='+password);
+		}
+	
+	
+	
+		var   re=/^[A-Za-z0-9]*$/;   
+		function check()
+		{
+			if(document.getElementById('account').value=="")
+			{
+				alert("账号为空！");
+				loginform.account.focus();
+				return false;
+			}
+			if(re.test(document.getElementById('account').value)==false){
+				alert("为防止注入，账号只能输入字母和数字！");
+				loginform.account.focus();
+				return false;
+			}
+			if(document.getElementById('password').value=="")
+			{
+				alert("密码为空！");
+				loginform.password.focus();
+				return false;
+			}
+			if(re.test(document.getElementById('password').value)==false){
+				alert("为防止注入，密码只能输入字母和数字！");
+				loginform.password.focus();
+				return false;
+			}
+			return true;
+		}
+		//先做注入检测，再检测是否在数据库中存在
+		function checkall()
+		{
+			if(check())
+				AJAXRequest();
+		}
+	</script>
+</body>	
+</html>

@@ -1,0 +1,1 @@
+<?php    $id = $_GET['id'];	$path=$_GET['pi_path'];	include("connect.php");	mysql_query("set names 'gb2312'");	$sql="delete from slide where s_no='".$id."' and s_path='".$path."'";	echo mysql_query($sql);?>

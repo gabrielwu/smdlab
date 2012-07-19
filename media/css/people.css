@@ -1,0 +1,97 @@
+﻿#area .area2 {
+    width: 94%;
+	margin: auto;
+}
+#area .area2 h4{
+    letter-spacing: 1px;	
+	border-bottom: 1px solid #CEE1EE;
+	text-align: left;
+	margin: 20px auto 10px;
+	font: normal 18px 微软雅黑,arial,sans-serif;
+	color: #06c;
+}
+#area .area2 h4  span{ 
+    display: inline-block;
+}
+#area .area2 h4  span.title_span{ 
+	width: 108px;
+}
+#area .area2 .person_area  {
+    width: 47%;
+    border: 1px solid #aaa;
+	padding: 10px 6px;
+	margin: 0 0 14px 0;
+	border-radius: 3px;
+	background: -webkit-linear-gradient(top, #f5f5f5, #eee) ;
+	background: -moz-linear-gradient(top, #f5f5f5, #eee) repeat scroll 0 0 transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5',endColorstr='#eeeeee');
+	text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+}
+#area .area2 .person_area:hover {
+    background: -webkit-linear-gradient(top, #f0f0f0, #e1e1e1) ;
+	background: -moz-linear-gradient(top, #f0f0f0, #e1e1e1) repeat scroll 0 0 transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0',endColorstr='#e1e1e1');
+	text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+	border: 1px solid #aaa;
+}
+#area .area2 .person_area_left  {
+    float: left;
+}
+#area .area2 .person_area_right  {
+    float: right;
+}
+#area .area2 .person_area table {
+    font-size: 13px;
+	font-family:verdana,微软雅黑,arial,sans-serif;
+}
+#area .area2 .person_area table tr td {
+    min-height: 23px;
+    padding: 0 2px;
+}
+#area .area2 .person_area table tr td a{
+	line-height: 1.5;
+	height: 23px;
+    color: #06c;
+	font: normal 14px 微软雅黑,arial,sans-serif;
+}
+#area .area2 .person_area table tr td .photo{
+	height: 110px;
+	width: 80px;
+	display: block;
+	margin: 0 4px 0 0 ;
+}
+#area .area2 .person_area table tr td .photo img{
+	height: 110px;
+	width: 80px;
+}
+#area .area2 .person_area table tr td .photo:hover{
+    border: none;
+}
+#area .area2 .person_area img {
+    margin: 0px;
+	height: 100%;
+}
+#area .area2 .person_area table tr td ul{
+    padding:0;margin:0;
+}
+#area .area2 .clear {
+    clear: both;
+}
+#area #area_detail {
+    width: 85%;
+	margin: 20px auto 30px;
+}
+#area #people_info {
+    width: 80%;
+	margin: 10px auto 4px;
+    font-family:微软雅黑,arial,sans-serif;
+}
+#area #people_info tr td{
+    border-bottom: 1px dashed #ddd;
+	font-size: 15px;
+}
+#area #people_info img{
+    width: 160px;
+}
+#people_info td{
+}

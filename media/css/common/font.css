@@ -1,0 +1,87 @@
+﻿li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+#header .cn {
+    font: bold 30px 隶书,arial,sans-serif;
+    color: #333;
+}
+#header .en {
+    font: bold 20px 隶书,arial,sans-serif;
+    color: #333;
+}
+#header .nav ul li{
+	list-style: none;
+}
+#header .nav ul li a{
+    font: bold 16px 微软雅黑,宋体,仿宋,黑体,arial,sans-serif;
+	color: #2E2E2E;
+    text-decoration: none;
+}
+#header .nav ul li a:hover{
+	color: #06C;
+}
+#header .nav ul li .current_head_nav{
+	color: #06C;
+}
+#header .nav .current_head_nav a{
+    height: 100%;
+	color: #06C;
+}
+
+#sidebar .sidebar_nav{
+    font-size: 88%;     
+}
+#sidebar .sidebar_nav h3 a {
+    color: #06c;
+	font-family: 微软雅黑;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+	font-size: 15px;
+	font-weight: bold;
+}
+#sidebar .sidebar_nav ul li { 
+    font-size: 13px;   	
+}
+#sidebar .sidebar_nav ul li a{
+    font-size: 14px;     
+	font-family: 微软雅黑,Verdana;
+}
+#sidebar .bold_a ul li a{
+	font-weight: bold;
+}
+#sidebar ul li:hover{
+	text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+}
+#sidebar .sidebar_nav ul li a:hover{
+    font-weight: bold;    
+    color: #06c;	
+	text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+}
+
+#sidebar .sidebar_nav ul li.current{
+    text-shadow: 0 1px rgba(255, 255, 255, 0.9);
+	font-weight: normal;    
+    color: #06c;	
+}
+#sidebar  #sidebar_nav_1 ul li{
+    text-indent: -3em;
+}
+#main #area {
+	line-height: 1.8;
+}
+#back_to_top a{
+	color: #fff;
+	text-align: center;
+	font: bold 15px arial,sans-serif;
+	line-height: 2.4;
+}
+
+#footer .copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold
+    color:#000;
+    text-align: center;
+}

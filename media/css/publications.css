@@ -1,0 +1,90 @@
+﻿#sidebar .sidebar_nav  h3 {
+    font-size: 15px;
+	letter-spacing: 1px;
+}
+#sidebar .sidebar_nav ul li {
+	height: 30px;
+}
+#sidebar .sidebar_nav ul li a{
+	letter-spacing: 1px;
+	font-size: 15px;
+	padding-left: 48px;
+}
+#area h3 {
+    width: 90%;
+	padding: 0 0 10px 0;
+    letter-spacing: 3px;	
+	border-bottom: 1px solid #CEE1EE;
+	text-align: center;
+	margin: 20px auto 20px;
+	font: normal 18px 微软雅黑,arial,sans-serif;
+	color: #06c;
+}
+#area .item {
+    margin: 16px auto;
+	width: 80%;
+	padding: 0 0 16px 1em;
+	text-indent:-2em;
+	text-align: justify;
+	border-bottom: 1px dashed #CEE1EE;
+    font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#area .item a {
+	color: #06c;
+}
+#area .item a:hover {
+    text-decoration: none;
+}
+#area .item a.paper_name {
+    font-style:italic;
+	color: #000;
+	text-decoration: none;
+}
+#area .item span.bold{
+    font-weight: bold;
+}
+#area .item a:hover {
+    text-decoration: none;
+}
+#area .item a.paper_name {
+    font-style:italic;
+	color: #000;
+	text-decoration: none;
+}
+#area .item a.paper_name {
+    font-style:italic;
+	color: #000;
+	text-decoration: underline;
+}
+#area #area_detail {
+    width: 85%;
+	margin: 20px auto 30px;
+}
+#area #area_detail h4{
+    border-bottom:1px solid #CEE1EE;
+	text-align: center;
+}
+#area #area_detail #paper_info_table{
+    width: 84%;
+	margin: 10px auto 4px;
+    font-family:arial,sans-serif;
+	font-size: 15px;
+}
+#area #area_detail #paper_info_table tr td{
+    border-bottom: 1px dashed #ddd;
+	letter-spacing: 0px;
+}
+#area #area_detail #paper_info_table tr td img{
+    border: 1px solid #ddd;
+}
+#area #area_detail #paper_info_table tr td.cn_td{
+    font-family:微软雅黑,arial,sans-serif;
+}
+#area #area_detail #paper_info_table tr td#link_td{
+    padding-left: 0px;
+}
+#paper_abstract {
+    width: 84%;
+	margin: 10px auto 4px;
+}

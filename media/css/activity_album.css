@@ -1,0 +1,26 @@
+﻿#main #area {
+    padding: 10px 24px 30px;
+    width: 90%;
+}
+#area h3 {
+	padding: 0 0 4px 20px;
+    letter-spacing: 0px;	
+	border-bottom: 1px solid #CEE1EE;
+	text-align: left;
+	margin: 20px auto 10px;
+	font: normal 18px 微软雅黑,arial,sans-serif;
+	color: #06c;
+}
+#main #area .item {
+    margin: 4px;
+	float: left;
+	width: 200px;
+	padding: 6px;
+	border: 1px solid #ddd;
+}
+#main #area .item a {
+    display: block;
+}
+#main #area .item img {
+    width: 200px;
+}

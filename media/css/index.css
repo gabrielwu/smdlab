@@ -1,0 +1,166 @@
+﻿h5 {
+    margin: 0 20px;
+    padding: 16px 10px 10px 16px;
+	font-size: 0.9em;
+	color: #06c;
+	border-bottom: 1px solid #dfdfdf;
+}
+.more_img {
+    float: right;
+	margin: -30px 60px;
+}
+#news_area {
+    width: 420px;
+	height: 200px;
+	margin: 10px 10px 10px 15px;
+	border-radius: 4px;
+	border: 1px solid #aaa;
+	background: #fff;
+}
+#news_table {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 0.84em;
+}
+#news_table  tr, #news_table  tr td{
+    padding: 4px 0 0 0;
+	height: 18px;
+}
+#news_table  tr td{
+    border-bottom: 1px dotted #dfdfdf;
+}
+#news_table  tr td a{
+    color: #333;
+}
+#news_table  tr td a:hover{
+    color: #E26B1D;
+	text-decoration:underline;
+}
+#news_table  tr td a.news_type_a:hover{
+    color: #06c;
+	text-decoration:underline;
+}
+.slide {
+    position: absolute;
+	top: 13px;
+	left: 460px;
+}
+#newsmessage {
+    width: 250px;
+	font-size: 0.8em;
+	line-height: 1.7;
+	text-align: center;
+}
+#newsmessage a{
+    color: #333;
+}
+#paper_area {
+    width: 710px;
+	height: 630px;
+	margin: 10px 15px 20px;
+	border-radius: 4px;
+	border: 1px solid #aaa;
+	background: #fff;
+}
+#paper_page {
+    margin: 0 0 0 250px;
+	color: #06c;
+}
+#paper_page a{
+    display: inline-block;
+    width: 16px;
+    margin: 0 2px;
+	font-size: 0.8em;
+    text-decoration: none;
+}
+#paper_page a:hover{
+	color: #E26B1D;
+}
+#paper_page a.num_page{
+	color: #06c;
+	text-align: center;
+	border: 1px solid #fff;
+}
+#paper_page a.num_page:hover{
+	color: #E26B1D;
+	border: 1px solid #ddd;
+}
+#paper_page a.current_page{
+	text-align: center;
+    color: #fff;
+	background: #ddd;
+	font-weight: bold;
+	border: 1px solid #ddd;
+}
+#paper_page a.current_page:hover{
+    color: #fff;
+}
+#paper_page a.pre_next {
+    margin: 0 2px;
+    position: relative;
+	border: 1px solid #ddd;
+}
+#paper_page a.pre_next:hover {
+	border: 1px solid #C6C6C6;
+}
+#paper_page a.pre_next_disable {
+    color: #ddd;
+}
+#paper_page a.pre_next_disable:hover {
+    color: #ddd;
+}
+#paper_page #pre {
+	width: 46px;
+	_width: 60px;
+	padding: 1px 0px 1px 12px;
+}
+#paper_page #next {
+	width: 41px;
+	_width: 60px;
+	padding: 1px 12px 1px 5px;
+}
+#paper_page  em{
+    display: block;
+    position: absolute;
+	top: 0px;
+	width: 16px;
+	height: 16px;
+}
+#paper_page #pre em{
+	left: 0px;
+	background: url(./images/ui-icons_3d80b3_256x240.png) no-repeat -96px -16px;
+}
+#paper_page #next em{
+	right: 0px;
+	background: url(./images/ui-icons_3d80b3_256x240.png) no-repeat -32px -16px;
+}
+#paper_table {
+    width: 95%;
+    margin: 10px auto;
+	font-size: 0.84em;
+}
+#paper_table tr{
+    height: 170px;
+    padding: 10px 0;
+    margin: 10px;
+	border-bottom: 1px dotted #dfdfdf;
+}
+#paper_table tr td{
+	border-bottom: 1px dotted #dfdfdf;
+	padding: 2px 0 2px 8px;
+	height: 16px;
+}
+#paper_table table tr{
+    height: 30px;
+	border: none;
+}
+#paper_table table tr td{
+	border: none;
+}
+#paper_table table tr td a{
+    font-weight: bold;
+	color: #06c;
+}
+#paper_table table tr td a:hover{
+    text-decoration: underline;
+}
