@@ -104,7 +104,7 @@ header("Content-Type:text/html;charset=gb2312");
 		
 ?>	
 	<tr><td rowspan="2"width="500px" height="70" valign="top" valign="center" ><?php echo $activity[1]; ?></td><td width="100px"><?php echo $activity[2]; ?></td></tr>
-	<tr><td><a href="javascript:actiPiclist('<?php echo $activity[0]; ?>')">É¾³ýÕÕÆ¬</a>|<a href="javascript:deleteactivity('<?php echo $activity[0]?>')">É¾³ý</a></td></tr>
+	<tr><td><a href="javascript:actiPiclist('<?php echo $activity[0]; ?>')">±à¼­ÕÕÆ¬</a>|<a href="javascript:deleteactivity('<?php echo $activity[0]?>')">É¾³ý</a></td></tr>
 <?php
 	}
 ?>

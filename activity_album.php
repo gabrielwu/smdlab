@@ -26,11 +26,11 @@
 		    <h3><?php echo $row['ac_name'];?></h3>
 		<?php
             }		
-		    $result = mysql_query("select pi_path from acti_pic where ac_no='$id'");
+		    $result = mysql_query("select * from acti_pic where ac_no='$id'");
 		    while($row = mysql_fetch_array($result)){
 	    ?>
             <div class="item">
-		        <a rel="example_group" href="<?php echo "../background".substr($row[pi_path],2)?>" title="<?php echo substr($row[pi_path],16); ?>">
+		        <a rel="example_group" href="<?php echo "../background".substr($row[pi_path],2)?>" title="<?php echo $row['pi_intro']; ?>">
 			        <img alt="" src="<?php echo "../background".substr($row[pi_path],2)?>" />
 				</a> 
             </div>

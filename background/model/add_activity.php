@@ -18,10 +18,11 @@
 		if($result)
 		{
 			$row=mysql_fetch_row($result);
+			$index = 0;
 			foreach($_GET['fileNames'] as $life_pic)
 			{
 				$life_pic='../picture/life/'.$life_pic;
-				$sql="insert into acti_pic (ac_no,pi_path) values('".$row[0]."','".$life_pic."')";
+				$sql="insert into acti_pic (ac_no,pi_path,pi_intro) values('".$row[0]."','".$life_pic."','".$_GET['picIntros'][$index++]."')";
 				//echo $sql;
 				mysql_query("SET NAMES utf8");
 				if(mysql_query($sql))

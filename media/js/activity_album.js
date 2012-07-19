@@ -28,7 +28,14 @@
 	});
 	$("#sidebar_nav_1 h3").unbind("click");
 	$("#sidebar_nav_4 h3").unbind("click");
+	resize_layout();
 });
+function resize_layout() {
+    var height = $("#area").height() + 30;
+	$("#main").height(height + 30);
+	$("#content").height(height + 30);
+	$("#sidebar").height(height);
+}
 $(document).ready(function() {
 	$("a[rel=example_group]").fancybox({
 		'transitionIn'		: 'none',
