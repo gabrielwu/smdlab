@@ -2,6 +2,7 @@
 header("Content-Type:text/html;charset=gb2312");
 //ÓÃ
 ?>
+
 <script src="../js/jquery-1.7.1.min.js"></script>
 <script src="../js/jquery-ui-1.8.18.custom.min.js"></script>
 
