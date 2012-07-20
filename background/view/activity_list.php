@@ -91,7 +91,7 @@ header("Content-Type:text/html;charset=gb2312");
 		$("#display").html(result.responseText);
 	}
 	function actiPiclist(id){
-		result = $.ajax({url:"../view/modify_activity.php?id="+id,async:false});
+		result = $.ajax({url:"../view/modify_activity_pic.php?id="+id,async:false});
 		$("#display").html(result.responseText);
 	}
 </script>
@@ -105,7 +105,10 @@ header("Content-Type:text/html;charset=gb2312");
 		
 ?>	
 	<tr><td rowspan="2"width="500px" height="70" valign="top" valign="center" ><?php echo $activity[1]; ?></td><td width="100px"><?php echo $activity[2]; ?></td></tr>
-	<tr><td><a href="javascript:actiPiclist('<?php echo $activity[0]; ?>')">±à¼­ÕÕÆ¬</a>|<a href="javascript:deleteactivity('<?php echo $activity[0]?>')">É¾³ý</a></td></tr>
+	<tr><td>
+	    <a href="modify_activity.php?ac_id=<?php echo $activity[0]; ?>">±à¼­</a>|
+		<a href="modify_activity_pic.php?id=<?php echo $activity[0]; ?>">±à¼­ÕÕÆ¬</a>|
+		<a href="javascript:deleteactivity('<?php echo $activity[0]?>')">É¾³ý</a></td></tr>
 <?php
 	}
 ?>

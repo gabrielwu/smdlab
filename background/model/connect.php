@@ -1,1 +1,1 @@
-<?PHP		require("../../db/conn.php");	//$link=mysql_connect("localhost","root","root") or die("Could not connect:".mysql_error());	//mysql_select_db("smdlab",$link);?>
+<?PHP	// 数据库	require("../../db/conn.php");?>

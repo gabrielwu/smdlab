@@ -1,4 +1,5 @@
 <?php
+//数据库
 	//$con = mysql_connect("192.168.1.102","wangkai","root");
 	$con = mysql_connect("localhost","root","root");
 	//$con = mysql_connect("localhost","smdlab","dianzi6655");
